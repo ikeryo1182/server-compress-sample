@@ -1,15 +1,10 @@
 # Description
-This repository has the simulation of gzip and brotli for you with gulp and docker.
+This repository has the simulation of gzip for you with docker.
 
 # How To Use
 - Install Node Modules
 ```
 yarn install
-```
-
-- Build Source
-```
-yarn run build
 ```
 
 - Docker Build
@@ -25,7 +20,7 @@ docker run -d -p 8080:80 httpd/test:latest
 - Testing 
     - Get plain
     ```
-    curl -s --head -H http://localhost:8080
+    curl -s --head http://localhost:8080
     ```
 
     - Get gzip compressed
